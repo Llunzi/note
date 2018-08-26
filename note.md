@@ -14,3 +14,7 @@ Gecko内核：Netscape6及以上版本，
 Presto内核：Opera
 Blink内核：Opera；
 Webkit内核：Safari，Chrome
+
+## 2. 'autocomplete="off"'在Chrome中不起作用解决方案
+autocomplete=”off” 
+autocomplete=”new-password”
