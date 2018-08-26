@@ -24,7 +24,7 @@ autocomplete=”new-password”
 ## 4. CSS优先级算法
 * 行内样式优先级specificity值为1,0,0,0 高于外部定义
   
-* 按CSS代码中出现的顺序决定，后者CSS样式居上；（近水楼台 先得月）
+* 按CSS代码中出现的顺序决定，后者CSS样式居上
 
 * !important声明specificity值优先级最高
 
