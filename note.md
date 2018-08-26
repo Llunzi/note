@@ -18,3 +18,6 @@ Webkit内核：Safari，Chrome
 ## 2. 'autocomplete="off"'在Chrome中不起作用解决方案
 autocomplete=”off” 
 autocomplete=”new-password”
+
+## 3. [如何在页面上实现一个圆形的可点击区域](https://www.cnblogs.com/guorange/p/7155164.html)
+
