@@ -29,3 +29,21 @@ autocomplete=”new-password”
 * !important声明specificity值优先级最高
 
 * 由继续而得到的样式没有specificity的计算，它低于一切其他规则（比如全局选择符*定义规则）
+
+	get extension()
+	{
+		let isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows"),
+			isMac = (navigator.platform == "Mac68K") || (navigator.platform == "MacPPC") || (navigator.platform == "Macintosh") || (navigator.platform == "MacIntel"),
+			extension = "";
+		
+		if(isWin)
+		{
+			extension = ".exe";
+		}
+		else if(isMac)
+		{
+			extension = ".pkg";
+		}
+		
+		return extension;
+	}
