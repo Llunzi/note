@@ -135,3 +135,21 @@ autocomplete=”new-password”
 \<source>------为\<video>和\<audio>定义资源<br>
 \<track>------为\<video>和\<audio>提供外部轨道<br>
 \<wbr>------单词换行时机<br>
+
+## 8. 页面导入样式时，使用link和@import有什么区别
+link链接方式： 
+```javascript
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+```
+@import导入方式：
+```javascript
+<style> 
+@import url(style.css); 
+</style>
+``` 
+* 区别：
+> 1. link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;<br>
+  2. 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;<br>
+  3. import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;
