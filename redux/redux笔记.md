@@ -1,3 +1,5 @@
+### [REDUX](https://segmentfault.com/a/1190000010371752?utm_source=tag-newest)
+
 ### 核心概念<br>
 	state action  reducer
 	
