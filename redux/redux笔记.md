@@ -1,5 +1,5 @@
 ### 核心概念<br>
-	state action  reducer<br>
+	state action  reducer
 	
 ### 三大原则<br>
 * 1. 单一数据源<br>
