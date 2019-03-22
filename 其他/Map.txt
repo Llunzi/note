@@ -1,0 +1,31 @@
+Map
+clear()
+	移除Map对象的所有键/值对。
+
+delete(key)
+	移除任何与键相关联的值，并且返回该值，该值在之前会被has(key)返回为true。之后再调用has(key)会返回false。
+
+entries()
+	返回一个新的 Iterator 对象，它按插入顺序包含了Map对象中每个元素的 [key, value] 数组。
+
+forEach(callbackFn[, thisArg])
+	按插入顺序，为 Map对象里的每一键值对调用一次callbackFn函数。如果为forEach提供了thisArg，它将在每次回调中作为this值。
+	
+get(key)
+	返回键对应的值，如果不存在，则返回undefined。
+	
+has(key)
+	返回一个布尔值，表示Map实例是否包含键对应的值。
+	
+keys()
+	返回一个新的 Iterator对象， 它按插入顺序包含了Map对象中每个元素的键 。
+	
+set(key, value)
+	设置Map对象中键的值。返回该Map对象。
+	
+values()
+	返回一个新的Iterator对象，它按插入顺序包含了Map对象中每个元素的值 。
+	
+Set.prototype.add(value)
+	在Set对象尾部添加一个元素。返回该Set对象
+	Set对象是值的集合，你可以按照插入的顺序迭代它的元素。 Set中的元素只会出现一次，即 Set 中的元素是唯一的。
