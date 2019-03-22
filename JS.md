@@ -4,3 +4,4 @@
 ### 4. [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
 ### 5. [一篇文章理解Web缓存](http://web.jobbole.com/95057/)
 ### 6. [MQTT 协议基本介绍](https://www.jianshu.com/p/ecde412d2eeb)
+### 7. [从浏览器渲染原理谈页面优化](https://blog.csdn.net/riddle1981/article/details/78681191)
