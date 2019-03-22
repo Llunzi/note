@@ -1,16 +1,16 @@
-reactÃæÊÔ£º
-1. JSX Óï·¨
+reacté¢è¯•ï¼š
+1. JSX è¯­æ³•
 	 ReactDOM.render
-	 Ê¹ÓÃ setState À´¸Ä±ä×é¼şµÄ×´Ì¬ state, Òì²½
-	 ×é¼şÉúÃüÖÜÆÚÏà¹ØµÄ·½·¨
-	 ÊÂ¼şºÍ±íµ¥
-	 ¼¸ÖÖ´´½¨×é¼şµÄ·½Ê½
-	 React.createClass Ê¹ÓÃÕâ¸öAPIÀ´¶¨Òå×é¼ş
-	 React ES6 class components Ê¹ÓÃ ES6 µÄclass À´¶¨Òå×é¼ş
-	 Functional stateless components Í¨¹ıº¯ÊıÖ±½Ó¶¨ÒåÎŞ×´Ì¬×é¼ş
-	 ¸´ºÏ×é¼ş composeable
-	 ¸ß½××é¼şµÄÊ¹ÓÃºÍ¶¨Òå HOC
-	 ×é¼ş¼äµÄÍ¨ĞÅ
+	 ä½¿ç”¨ setState æ¥æ”¹å˜ç»„ä»¶çš„çŠ¶æ€ state, å¼‚æ­¥
+	 ç»„ä»¶ç”Ÿå‘½å‘¨æœŸç›¸å…³çš„æ–¹æ³•
+	 äº‹ä»¶å’Œè¡¨å•
+	 å‡ ç§åˆ›å»ºç»„ä»¶çš„æ–¹å¼
+	 React.createClass ä½¿ç”¨è¿™ä¸ªAPIæ¥å®šä¹‰ç»„ä»¶
+	 React ES6 class components ä½¿ç”¨ ES6 çš„class æ¥å®šä¹‰ç»„ä»¶
+	 Functional stateless components é€šè¿‡å‡½æ•°ç›´æ¥å®šä¹‰æ— çŠ¶æ€ç»„ä»¶
+	 å¤åˆç»„ä»¶ composeable
+	 é«˜é˜¶ç»„ä»¶çš„ä½¿ç”¨å’Œå®šä¹‰ HOC
+	 ç»„ä»¶é—´çš„é€šä¿¡
 
 2. constructor(props)
 	 componentWillReceivePorps(nextProps)
@@ -22,37 +22,37 @@ reactÃæÊÔ£º
    componentDidUpdate()
    componentWillMount()
    
-3. µ±Äãµ÷ÓÃsetStateµÄÊ±ºò£¬·¢ÉúÁËÊ²Ã´ÊÂ£¿
-   shouldComponentUpdate(nextPorps, nextState) ... ĞéÄâDom Diff
-4. ÔÚ React µ±ÖĞ Element ºÍ Component ÓĞºÎÇø±ğ£¿
-   ReactElementÊÇÃèÊöÆÁÄ»ÉÏËù¼ûµÄÄÚÈİµÄÊı¾İ½á¹¹,ÊÇ¶ÔÓÚUIµÄ¶ÔÏóµÄ±íÊö.µäĞÍµÄReactElement¾ÍÊÇÀûÓÃJSX¹¹½¨µÄÉùÃ÷Ê½´úÂëÆ¬¶Î,È»ºó±»×ª»¯ÎªcreateElementµÄµ÷ÓÃ×éºÏ.
-	 ReactComponentÔòÊÇ¿ÉÒÔ½ÓÊÕ²ÎÊıÊäÈë²¢ÇÒ·µ»ØÄ³¸öReactElementµÄº¯Êı»òÕßÀà.
+3. å½“ä½ è°ƒç”¨setStateçš„æ—¶å€™ï¼Œå‘ç”Ÿäº†ä»€ä¹ˆäº‹ï¼Ÿ
+   shouldComponentUpdate(nextPorps, nextState) ... è™šæ‹ŸDom Diff
+4. åœ¨ React å½“ä¸­ Element å’Œ Component æœ‰ä½•åŒºåˆ«ï¼Ÿ
+   ReactElementæ˜¯æè¿°å±å¹•ä¸Šæ‰€è§çš„å†…å®¹çš„æ•°æ®ç»“æ„,æ˜¯å¯¹äºUIçš„å¯¹è±¡çš„è¡¨è¿°.å…¸å‹çš„ReactElementå°±æ˜¯åˆ©ç”¨JSXæ„å»ºçš„å£°æ˜å¼ä»£ç ç‰‡æ®µ,ç„¶åè¢«è½¬åŒ–ä¸ºcreateElementçš„è°ƒç”¨ç»„åˆ.
+	 ReactComponentåˆ™æ˜¯å¯ä»¥æ¥æ”¶å‚æ•°è¾“å…¥å¹¶ä¸”è¿”å›æŸä¸ªReactElementçš„å‡½æ•°æˆ–è€…ç±».
 
-5. Ê²Ã´ÊÇ React µÄ refs £¬keys£¬ÎªÊ²Ã´ËüÃÇºÜÖØÒª£¿ĞèÒª×¢ÒâÄÄĞ©£¿
-   keysÊÇÊ²Ã´°ïÖú React ¸ú×ÙÄÄĞ©ÏîÄ¿ÒÑ¸ü¸Ä¡¢Ìí¼Ó»ò´ÓÁĞ±íÖĞÉ¾³ı¡£
-       Ã¿¸ö keys ÔÚĞÖµÜÔªËØÖ®¼äÊÇ¶ÀÒ»ÎŞ¶şµÄ
+5. ä»€ä¹ˆæ˜¯ React çš„ refs ï¼Œkeysï¼Œä¸ºä»€ä¹ˆå®ƒä»¬å¾ˆé‡è¦ï¼Ÿéœ€è¦æ³¨æ„å“ªäº›ï¼Ÿ
+   keysæ˜¯ä»€ä¹ˆå¸®åŠ© React è·Ÿè¸ªå“ªäº›é¡¹ç›®å·²æ›´æ”¹ã€æ·»åŠ æˆ–ä»åˆ—è¡¨ä¸­åˆ é™¤ã€‚
+       æ¯ä¸ª keys åœ¨å…„å¼Ÿå…ƒç´ ä¹‹é—´æ˜¯ç‹¬ä¸€æ— äºŒçš„
    
-   RefsÊÇReactÌá¹©¸øÎÒÃÇ°²È«µÄ·ÃÎÊDOMÔªËØ»òÕßÄ³¸ö×é¼şÊµÀıµÄ¾ä±ú,
-       ÎÒÃÇ¿ÉÒÔÎªÔªËØÌí¼ÓrefÊôĞÔÈ»ºóÔÚ»Øµ÷º¯ÊıÖĞ½ÓÊÕ¸ÃÔªËØÔÚDOMÊ÷ÖĞµÄ¾ä±ú,¸ÃÖµ»á×÷Îª»Øµ÷º¯ÊıµÄµÚÒ»¸ö²ÎÊıµÄ·µ»Ø.
+   Refsæ˜¯Reactæä¾›ç»™æˆ‘ä»¬å®‰å…¨çš„è®¿é—®DOMå…ƒç´ æˆ–è€…æŸä¸ªç»„ä»¶å®ä¾‹çš„å¥æŸ„,
+       æˆ‘ä»¬å¯ä»¥ä¸ºå…ƒç´ æ·»åŠ refå±æ€§ç„¶ååœ¨å›è°ƒå‡½æ•°ä¸­æ¥æ”¶è¯¥å…ƒç´ åœ¨DOMæ ‘ä¸­çš„å¥æŸ„,è¯¥å€¼ä¼šä½œä¸ºå›è°ƒå‡½æ•°çš„ç¬¬ä¸€ä¸ªå‚æ•°çš„è¿”å›.
    ReactDOM.findDOMNode(ref)
    
-6. ÔÚÄÄ¸öÉúÃüÖÜÆÚÊÂ¼şÖĞÄã»á·¢³ö AJAX ÇëÇó£¬ÎªÊ²Ã´£¿componentDidMount 
-7. shouldComponentUpdate Ó¦¸Ã×öÊ²Ã´£¬ÎªÊ²Ã´ËüºÜÖØÒª£¿
-8. createElement ºÍ cloneElement ÓĞÊ²Ã´Çø±ğ£¿
+6. åœ¨å“ªä¸ªç”Ÿå‘½å‘¨æœŸäº‹ä»¶ä¸­ä½ ä¼šå‘å‡º AJAX è¯·æ±‚ï¼Œä¸ºä»€ä¹ˆï¼ŸcomponentDidMount 
+7. shouldComponentUpdate åº”è¯¥åšä»€ä¹ˆï¼Œä¸ºä»€ä¹ˆå®ƒå¾ˆé‡è¦ï¼Ÿ
+8. createElement å’Œ cloneElement æœ‰ä»€ä¹ˆåŒºåˆ«ï¼Ÿ
    React.createElement(type,[props],[...children])
    React.cloneElement(element,[props],[...children])
    
  =========================Redux===================================
  
  
-1.Ã¿¸ö´«Èë combineReducers µÄ reducer ¶¼ĞèÂú×ãÒÔÏÂ¹æÔò£º
- a. ËùÓĞÎ´Æ¥Åäµ½µÄ action£¬±ØĞë°ÑËü½ÓÊÕµ½µÄµÚÒ»¸ö²ÎÊıÒ²¾ÍÊÇÄÇ¸ö state Ô­·â²»¶¯·µ»Ø¡£
- b. ÓÀÔ¶²»ÄÜ·µ»Ø undefined¡£µ±¹ıÔç return Ê±·Ç³£ÈİÒ×·¸Õâ¸ö´íÎó£¬ÎªÁË±ÜÃâ´íÎóÀ©É¢£¬Óöµ½ÕâÖÖÇé¿öÊ± combineReducers »áÅ×Òì³£¡£
- c. Èç¹û´«ÈëµÄ state ¾ÍÊÇ undefined£¬Ò»¶¨Òª·µ»Ø¶ÔÓ¦ reducer µÄ³õÊ¼ state¡£
-    ¸ù¾İÉÏÒ»Ìõ¹æÔò£¬³õÊ¼ state ½ûÖ¹Ê¹ÓÃ undefined¡£Ê¹ÓÃ ES6 µÄÄ¬ÈÏ²ÎÊıÖµÓï·¨À´ÉèÖÃ³õÊ¼ state ºÜÈİÒ×£¬µ«ÄãÒ²¿ÉÒÔÊÖ¶¯¼ì²éµÚÒ»¸ö²ÎÊıÊÇ·ñÎª undefined¡£
+1.æ¯ä¸ªä¼ å…¥ combineReducers çš„ reducer éƒ½éœ€æ»¡è¶³ä»¥ä¸‹è§„åˆ™ï¼š
+ a. æ‰€æœ‰æœªåŒ¹é…åˆ°çš„ actionï¼Œå¿…é¡»æŠŠå®ƒæ¥æ”¶åˆ°çš„ç¬¬ä¸€ä¸ªå‚æ•°ä¹Ÿå°±æ˜¯é‚£ä¸ª state åŸå°ä¸åŠ¨è¿”å›ã€‚
+ b. æ°¸è¿œä¸èƒ½è¿”å› undefinedã€‚å½“è¿‡æ—© return æ—¶éå¸¸å®¹æ˜“çŠ¯è¿™ä¸ªé”™è¯¯ï¼Œä¸ºäº†é¿å…é”™è¯¯æ‰©æ•£ï¼Œé‡åˆ°è¿™ç§æƒ…å†µæ—¶ combineReducers ä¼šæŠ›å¼‚å¸¸ã€‚
+ c. å¦‚æœä¼ å…¥çš„ state å°±æ˜¯ undefinedï¼Œä¸€å®šè¦è¿”å›å¯¹åº” reducer çš„åˆå§‹ stateã€‚
+    æ ¹æ®ä¸Šä¸€æ¡è§„åˆ™ï¼Œåˆå§‹ state ç¦æ­¢ä½¿ç”¨ undefinedã€‚ä½¿ç”¨ ES6 çš„é»˜è®¤å‚æ•°å€¼è¯­æ³•æ¥è®¾ç½®åˆå§‹ state å¾ˆå®¹æ˜“ï¼Œä½†ä½ ä¹Ÿå¯ä»¥æ‰‹åŠ¨æ£€æŸ¥ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯å¦ä¸º undefinedã€‚
     
-2. reducer ¾ÍÊÇÒ»¸öº¯Êı£¬½ÓÊÕ¾ÉµÄ state ºÍ action£¬·µ»ØĞÂµÄ state
-   combineReducers(reducers)·½·¨£¬°ÑÒ»¸öÓÉ¶à¸ö²»Í¬ reducer º¯Êı×÷Îª value µÄ object£¬ºÏ²¢³ÉÒ»¸ö×îÖÕµÄ reducer º¯Êı£¬È»ºó¾Í¿ÉÒÔ¶ÔÕâ¸ö reducer µ÷ÓÃ createStore¡£
+2. reducer å°±æ˜¯ä¸€ä¸ªå‡½æ•°ï¼Œæ¥æ”¶æ—§çš„ state å’Œ actionï¼Œè¿”å›æ–°çš„ state
+   combineReducers(reducers)æ–¹æ³•ï¼ŒæŠŠä¸€ä¸ªç”±å¤šä¸ªä¸åŒ reducer å‡½æ•°ä½œä¸º value çš„ objectï¼Œåˆå¹¶æˆä¸€ä¸ªæœ€ç»ˆçš„ reducer å‡½æ•°ï¼Œç„¶åå°±å¯ä»¥å¯¹è¿™ä¸ª reducer è°ƒç”¨ createStoreã€‚
    
    
 3. applyMiddleware(...middlewares) {
@@ -61,21 +61,50 @@ reactÃæÊÔ£º
     ... 
 }
 
-4. Òì²½²Ù×÷
-   Òì²½²Ù×÷µÄµÚÒ»ÖÖ½â¾ö·½°¸¾ÍÊÇ£¬Ğ´³öÒ»¸ö·µ»Øº¯ÊıµÄ Action Creator£¬È»ºóÊ¹ÓÃredux-thunkÖĞ¼ä¼ş¸ÄÔìstore.dispatch
+4. å¼‚æ­¥æ“ä½œ
+   å¼‚æ­¥æ“ä½œçš„ç¬¬ä¸€ç§è§£å†³æ–¹æ¡ˆå°±æ˜¯ï¼Œå†™å‡ºä¸€ä¸ªè¿”å›å‡½æ•°çš„ Action Creatorï¼Œç„¶åä½¿ç”¨redux-thunkä¸­é—´ä»¶æ”¹é€ store.dispatch
    
-5. UI×é¼ş¡¢ÈİÆ÷×é¼ş  
-	UI×é¼ş£º
-	Ö»¸ºÔğ UI µÄ³ÊÏÖ£¬²»´øÓĞÈÎºÎÒµÎñÂß¼­
-	Ã»ÓĞ×´Ì¬£¨¼´²»Ê¹ÓÃthis.stateÕâ¸ö±äÁ¿£©
-	ËùÓĞÊı¾İ¶¼ÓÉ²ÎÊı£¨this.props£©Ìá¹©
-	²»Ê¹ÓÃÈÎºÎ Redux µÄ API
+5. UIç»„ä»¶ã€å®¹å™¨ç»„ä»¶  
+	UIç»„ä»¶ï¼š
+	åªè´Ÿè´£ UI çš„å‘ˆç°ï¼Œä¸å¸¦æœ‰ä»»ä½•ä¸šåŠ¡é€»è¾‘
+	æ²¡æœ‰çŠ¶æ€ï¼ˆå³ä¸ä½¿ç”¨this.stateè¿™ä¸ªå˜é‡ï¼‰
+	æ‰€æœ‰æ•°æ®éƒ½ç”±å‚æ•°ï¼ˆthis.propsï¼‰æä¾›
+	ä¸ä½¿ç”¨ä»»ä½• Redux çš„ API
 	
-	ÈİÆ÷×é¼ş: 
-	¸ºÔğ¹ÜÀíÊı¾İºÍÒµÎñÂß¼­£¬²»¸ºÔğ UI µÄ³ÊÏÖ
-	´øÓĞÄÚ²¿×´Ì¬
-	Ê¹ÓÃ Redux µÄ API
+	å®¹å™¨ç»„ä»¶: 
+	è´Ÿè´£ç®¡ç†æ•°æ®å’Œä¸šåŠ¡é€»è¾‘ï¼Œä¸è´Ÿè´£ UI çš„å‘ˆç°
+	å¸¦æœ‰å†…éƒ¨çŠ¶æ€
+	ä½¿ç”¨ Redux çš„ API
  
-  UI ×é¼ş¸ºÔğ UI µÄ³ÊÏÖ£¬ÈİÆ÷×é¼ş¸ºÔğ¹ÜÀíÊı¾İºÍÂß¼­
+  UI ç»„ä»¶è´Ÿè´£ UI çš„å‘ˆç°ï¼Œå®¹å™¨ç»„ä»¶è´Ÿè´£ç®¡ç†æ•°æ®å’Œé€»è¾‘
   
   applyMiddleware 
+  
+  combineReducers
+  
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import promise from 'redux-promise';
+import rootReducer from '../reducers';
+
+function configureStore(initialState)
+{
+	return createStore(rootReducer,
+		initialState,
+		applyMiddleware(thunk, promise)
+	);
+}
+
+export default configureStore;
+
+function mapStateToProps(state)
+{
+	return {};
+}
+
+function mapDispatchToProps(dispatch)
+{
+	return bindActionCreators({}, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
