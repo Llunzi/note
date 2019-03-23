@@ -209,3 +209,6 @@ title 属性没有明确意义只表示是个标题，H1则表示层次明确的
 HTML5 不基于 SGML，因此不需要对 DTD 进行引用，但是需要 doctype 来规
 范浏览器的行为（让浏览器按照它们应该的方式来运行）;而 HTML4.01 基于
  SGML,所以需要对 DTD 进行引用，才能告知浏览器文档所使用的文档类型;
+
+## HTML5 
+HTML5是用于取代1999年所制定的 HTML 4.01 和 XHTML 1.0 标准的 HTML 标准版本，现在仍处于发展阶段，但大部分浏览器已经支持某些 HTML5 技术。HTML 5有两大特点：首先，强化了 Web 网页的表现性能。其次，追加了本地数据库等 Web 应用的功能。广义论及HTML5时，实际指的是包括HTML、CSS和JavaScript在内的一套技术组合。它希望能够减少浏览器对于需要插件的丰富性网络应用服务（plug-in-based rich internet application，RIA)，如Adobe Flash、Microsoft Silverlight，与Oracle JavaFX的需求，并且提供更多能有效增强网络应用的标准集。
