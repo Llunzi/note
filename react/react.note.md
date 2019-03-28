@@ -4,3 +4,6 @@
 ## 4. [React进阶—性能优化](https://segmentfault.com/a/1190000008925295?utm_source=tag-newest#articleHeader7)
 ## 5. [高阶组件](https://segmentfault.com/a/1190000010371752?utm_source=tag-newest)
 ## 6. [React专题：react，redux以及react-redux常见一些面试题](https://segmentfault.com/a/1190000017140200)
+## 7. [使用immutable优化React](https://segmentfault.com/a/1190000010438089)
+## 8. [Immutable.js 以及在 react+redux 项目中的实践](https://blog.csdn.net/sinat_17775997/article/details/73603797)
+## 9. [Immutable 详解及React中实践](https://blog.csdn.net/qq_33323251/article/details/80459497)(http://ju.outofmemory.cn/entry/348093)
