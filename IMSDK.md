@@ -9,3 +9,10 @@
 按照接口文档开发，接口联调和后期维护； <br>
 使用XHR实现了，解决ie8不能兼容webSocket问题； <br>
 通过webpack创建IMSDKlibrary，方便访客端和客户端使用
+
+
+* 消息机制
+* 消息队列 拉去消息机制
+* 连接重连机制
+* HTTP保障websocket
+* 消息重发机制
