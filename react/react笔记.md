@@ -79,3 +79,65 @@ react面试：
   UI 组件负责 UI 的呈现，容器组件负责管理数据和逻辑
   
   applyMiddleware 
+  
+  6. 性能优化（https://zh-hans.reactjs.org/docs/optimizing-performance.html）
+ 1. webpack
+  new webpack.DefinePlugin({
+  'process.env.NODE_ENV': JSON.stringify('production')
+}),
+  new webpack.optimize.UglifyJsPlugin()
+ 2. Rollup
+ replace 插件确保环境被正确设置。
+ commonjs 插件用于支持 CommonJS。
+ uglify 插件用于压缩并生成最终的产物。
+ plugins: [
+  // ...
+  require('rollup-plugin-replace')({
+    'process.env.NODE_ENV': JSON.stringify('production')
+  }),
+  require('rollup-plugin-commonjs')(),
+  require('rollup-plugin-uglify')(),
+  // ...
+ ] 
+ 3. 使用 Chrome Performance 标签分析组件
+ 临时禁用所有的 Chrome 扩展，尤其是 React 开发者工具。他们会严重干扰度量结果！
+
+确保你是在 React 的开发模式下运行应用。
+
+打开 Chrome 开发者工具的 Performance 标签并按下 Record。
+
+对你想分析的行为进行复现。尽量在 20 秒内完成以避免 Chrome 卡住。
+
+停止记录。
+
+在 User Timing 标签下会显示 React 归类好的事件。
+4. 使用开发者工具中的分析器对组件进行分析
+Web通用工具：Chrome DevTools
+React特色工具：Perf
+5. 虚拟化长列表
+如果你的应用渲染了长列表（上百甚至上千的数据），我们推荐使用“虚拟滚动”技术。这项技术会在有限的时间内仅渲染有限的内容，并奇迹般地降低重新渲染组件消耗的时间，以及创建 DOM 节点的数量。
+
+react-window 和 react-virtualized 是热门的虚拟滚动库。 它们提供了多种可复用的组件，用于展示列表、网格和表格数据。 如果你想要一些针对你的应用做定制优化，你也可以创建你自己的虚拟滚动组件，就像 Twitter 所做的。
+6. 你可以通过 React 开发者工具可视化地查看这些重新渲染的虚拟 DOM：
+在开发者控制台的 React 标签勾选 Highlight Updates：
+当与你的页面进行交互时，你会看到被重新渲染的组件立刻出现了彩色的边框。这能帮助你找到那些没有必要的重新渲染。你可以在 Ben Edelstein 的这篇博客中学到更多关于 React 开发者工具的功能。
+7. shouldComponentUpdate 的作用，你可以使用 React.PureComponent 来代替手写 shouldComponentUpdate。shallowCompare
+setState diff 
+减少diff算法触发次数
+  1.setState
+	setState机制在正常运行时，由于批更新策略，已经降低了update过程的触发次数。
+	因此，setState优化主要在于非批更新阶段中(timeout/Promise回调)，减少setState的触发次数。
+	常见的业务场景即处理接口回调时，无论数据处理多么复杂，保证最后只调用一次setState。
+
+  2.父组件render
+	父组件的render必然会触发子组件进入update阶段（无论props是否更新）。此时最常用的优化方案即为shouldComponentUpdate方法。
+	最常见的方式为进行this.props和this.state的浅比较来判断组件是否需要更新。或者直接使用PureComponent，原理一致。
+	需要注意的是，父组件的render函数如果写的不规范，将会导致上述的策略失效。
+  3. forceUpdate
+	其中forceUpdate方法调用后将会直接进入componentWillUpdate阶段，无法拦截，因此在实际项目中应该弃用。
+ 正确使用diff算法
+	不使用跨层级移动节点的操作。
+	对于条件渲染多个节点时，尽量采用隐藏等方式切换节点，而不是替换节点。
+	尽量避免将后面的子节点移动到前面的操作，当节点数量较多时，会产生一定的性能问题。
+8. 不可变数据的力量 避免该问题最简单的方式是避免更改你正用于 props 或 state 的值。
+9. 结合Immutable.js
