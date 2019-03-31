@@ -11,8 +11,6 @@
 通过webpack创建IMSDKlibrary，方便访客端和客户端使用
 
 ```
-
-
 消息机制
   消息类型：
     握手消息 传递token、设备信息、appid、会话id、用户信息
