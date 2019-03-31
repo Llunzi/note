@@ -80,13 +80,14 @@ react面试：
   
   applyMiddleware 
   
-  6. 性能优化（https://zh-hans.reactjs.org/docs/optimizing-performance.html）
- 1. webpack
+  6. [性能优化]（https://zh-hans.reactjs.org/docs/optimizing-performance.html）
+  ```
+  1. webpack
   new webpack.DefinePlugin({
   'process.env.NODE_ENV': JSON.stringify('production')
 }),
   new webpack.optimize.UglifyJsPlugin()
- 2. Rollup
+2. Rollup
  replace 插件确保环境被正确设置。
  commonjs 插件用于支持 CommonJS。
  uglify 插件用于压缩并生成最终的产物。
@@ -141,3 +142,5 @@ setState diff
 	尽量避免将后面的子节点移动到前面的操作，当节点数量较多时，会产生一定的性能问题。
 8. 不可变数据的力量 避免该问题最简单的方式是避免更改你正用于 props 或 state 的值。
 9. 结合Immutable.js
+  ```
+
