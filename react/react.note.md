@@ -8,4 +8,4 @@
 ## 8. [Immutable.js 以及在 react+redux 项目中的实践](https://blog.csdn.net/sinat_17775997/article/details/73603797)
 ## 9. [Immutable 详解及React中实践](https://blog.csdn.net/qq_33323251/article/details/80459497)(http://ju.outofmemory.cn/entry/348093)
 redux-immutablejs
-
+shallowCompare
