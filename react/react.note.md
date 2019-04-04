@@ -10,3 +10,4 @@
 redux-immutablejs
 shallowCompare
 ## 10. [React 源码深度解读](https://segmentfault.com/a/1190000016741764)
+## 11. [你不知道的Virtual DOM](https://segmentfault.com/a/1190000016129036)
