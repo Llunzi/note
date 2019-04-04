@@ -9,3 +9,4 @@
 ## 9. [Immutable 详解及React中实践](https://blog.csdn.net/qq_33323251/article/details/80459497)(http://ju.outofmemory.cn/entry/348093)
 redux-immutablejs
 shallowCompare
+## 10. [React 源码深度解读](https://segmentfault.com/a/1190000016741764)
