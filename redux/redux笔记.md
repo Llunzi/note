@@ -10,3 +10,5 @@
 	唯一改变 state 的方法就是触发 action，action 是一个用于描述已发生事件的普通对象。<br>
 * 使用纯函数来执行修改<br>
 	为了描述 action 如何改变 state tree ，你需要编写 reducers。<br>
+	
+* [核心代码](https://blog.csdn.net/sinat_17775997/article/details/83410124)
