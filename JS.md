@@ -1,8 +1,0 @@
-### 1. [前端面试之JavaScript（总结）](https://segmentfault.com/a/1190000015294769)
-### 2. [js repaint 重绘 reflow 渲染](https://www.jianshu.com/p/0b45a6bb3c6b)
-### 3. [MDN webdocs](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-### 4. [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
-### 5. [一篇文章理解Web缓存](http://web.jobbole.com/95057/)
-### 6. [MQTT 协议基本介绍](https://www.jianshu.com/p/ecde412d2eeb)
-### 7. [从浏览器渲染原理谈页面优化](https://blog.csdn.net/riddle1981/article/details/78681191)
-### 8. [面向对象](https://segmentfault.com/a/1190000011061136)

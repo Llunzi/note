@@ -1,9 +1,0 @@
-ES6常用特性
-	变量定义(let和const,可变与不可变，const定义对象的特殊情况)
-	解构赋值
-	模板字符串
-	数组新API(例：Array.from(),entries(),values(),keys())
-	箭头函数(rest参数，扩展运算符，::绑定this)
-	Set和Map数据结构(set实例成员值唯一存储key值，map实例存储键值对(key-value))
-	Promise对象(前端异步解决方案进化史，generator函数，async函数)
-	Class语法糖(super关键字)
