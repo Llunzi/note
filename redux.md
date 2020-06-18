@@ -1,6 +1,6 @@
 ### 理解Redux以及如何在项目中的使用
 
-### compose[http://cn.redux.js.org/docs/api/compose.html]
+### [compose](http://cn.redux.js.org/docs/api/compose.html)
 ```
 export default function compose(...funcs: Function[]) {
   if (funcs.length === 0) {
