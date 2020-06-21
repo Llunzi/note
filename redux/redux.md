@@ -52,7 +52,7 @@ import { bindActionCreators } from 'redux'
 ```
 ### 5. 触发Dispather
 ```
-this.dispatchPageConfig(channelCode, orderChannel)
+this.props.dispatchPageConfig(channelCode, orderChannel)
 ```
 
 ### [compose](http://cn.redux.js.org/docs/api/compose.html)
