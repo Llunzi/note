@@ -16,6 +16,18 @@
 ```
 
 ### Jenkins配置
+#### 解锁Jenkins
+![图片](./imgs/20170822111233744.png)
+```code
+// 进入jenkins容器
+docker exec -it [container ID] sh
+// 获取初始密码
+cat /var/jenkins_home/secrets/initialAdminPassword
+
+输入后即使jenkins的初始化配置
+```
+#### 创建用户
+
 ###  Jenkins配置
 ### 参考
 * https://ci.jenkins.io/
