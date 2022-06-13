@@ -15,9 +15,9 @@
  http://localhost:8080
 ```
 
-### Jenkins配置
+### Jenkins帐号
 #### 解锁Jenkins
-![图片](./imgs/20170822111233744.png)
+![图片](./imgs/20170822111233744.png
 ```code
 // 进入jenkins容器
 docker exec -it [container ID] sh
@@ -27,8 +27,13 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 输入后即使jenkins的初始化配置
 ```
 #### 创建用户
+<img src="./imgs/xhjgkpjg86.png" width="50%">
+
+* 登录后进系统管理
 
 ###  Jenkins配置
+* 系统管理
+
 ### 参考
 * https://ci.jenkins.io/
 * https://cloud.tencent.com/developer/article/1379404
