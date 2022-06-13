@@ -33,6 +33,7 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 
 ###  Jenkins配置
 * 系统管理
+* <img src="./imgs/ad94724f-1f83-4310-9bac-5548f654349b.jpg" width="50%">
 
 ### 参考
 * https://ci.jenkins.io/
